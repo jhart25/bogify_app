@@ -7,7 +7,11 @@ const PORT = process.env.port || 8000;
 
 const db = BogifySongsSearch;
 
+<<<<<<< HEAD
 const MONGODB_URL = process.env.MONGODB_URL || `mongodb: localhost: ${reactSongList}; `
+=======
+const MONGODB_URL = process.env.MONGODB_URL || `mongodb: localhost: ${dbname}; `
+>>>>>>> 730704208e7980e9f54488df66d4517885d25b8a
 const db = require("./db/models/")(mongoose);
 
 app.use(express.urlencoded({extended: true}));
@@ -31,4 +35,12 @@ if (process.env.NODE_ENV === "development") {
     App.listen(PORT, function(){
      console.log("App Server is listening on port" + PORT)
     });
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+   
+>>>>>>> 730704208e7980e9f54488df66d4517885d25b8a

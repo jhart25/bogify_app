@@ -8,7 +8,7 @@ album: { type: string, required:true},
 year: { type: Year, default: Year.now }
 });
 
-const Songs = mongoose.model("Songs", songSchema)
+const Song = mongoose.model("Song", songSchema)
 
-module.exports = Songs;
+module.exports = Song;
 
