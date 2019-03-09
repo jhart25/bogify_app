@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import Carousel from "../components/Carousel/carousel";
 
 function About() {
   return (
@@ -25,5 +26,6 @@ function About() {
     </div>
   );
 }
+
 
 export default About;
