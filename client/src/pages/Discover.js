@@ -1,60 +1,22 @@
-import React, { Component } from "react";
+import React from "react";
+import Hero from "../components/Hero";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
 import Spotify from 'spotify-web-api-js';
 
-const spotifyWebApi = new Spotify();
-
-class Discover extends Component {
-  constructor(){
-    super();
-    const params = this.getHashParams();
-    this.state ={
-      loggedIn: params.access_token ? true : false,
-      nowPlaying: {
-        name: 'Not Checked',
-        image: ''
-      }
-    }
-    if (params.access_token){
-      spotifyWebApi.setAccessToken(params.access_token)
-    }
-  }
-   getHashParams() {
-    var hashParams = {};
-    var e, r = /([^&;=]+)=?([^&;]*)/g,
-        q = window.location.hash.substring(1);
-    while ( e = r.exec(q)) {
-       hashParams[e[1]] = decodeURIComponent(e[2]);
-    }
-    return hashParams;
-  }
-
-  getNowPlaying(){
-    spotifyWebApi.getMyCurrentPlaybackState()
-    .then((response) => {
-      this.setState({
-        nowPlaying: {
-          name: response.item.name,
-          image: response.item.album.images[0].url
-        }
-      })
-    })
-  }
-  render() {
+function Discover() {
   return (
-      <div className="App">
-          <a href="http://localhost:8888">
-            <button>Login With Spotify</button>
-          </a>
-          <div> Now Playing: { this.state.nowPlaying.name } </div>
-          <div>
-            <img src={ this.state.nowPlaying.image } style={{ width: 100}}/>
-          </div>
-          <button onClick={() => this.getNowPlaying()}>
-            Check Now Playing
-          </button>
-      </div>
-    );
-  }
+    <div>
+      <Hero backgroundImage="">
+        <h1>Bogify</h1>
+        <h2>A more Social Spotify</h2>
+        <a href="http://localhost:8888">
+          <button>Login With Spotify</button>
+        </a>
+      </Hero>
+    </div>
+  );
 }
 
 export default Discover;
