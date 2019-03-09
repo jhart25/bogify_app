@@ -8,10 +8,8 @@ import Carousel from "../components/Carousel/carousel";
 function About() {
   return (
     <div>
-      <Hero backgroundImage="">
-        <h1>Bogify</h1>
-        <h2>A more Social Spotify</h2>
-      </Hero>
+      <Carousel />
+     
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
@@ -23,6 +21,7 @@ function About() {
           </Col>
         </Row>
       </Container>
+      
     </div>
   );
 }
