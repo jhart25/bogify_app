@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./style.css";
+import "./style.css"
 import {
   Carousel,
   CarouselItem,
@@ -67,7 +67,7 @@ class Example extends Component {
 
     const slides = items.map((item) => {
       return (
-        <CarouselItem 
+        <CarouselItem
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}
@@ -79,7 +79,7 @@ class Example extends Component {
     });
 
     return (
-      <Carousel 
+      <Carousel
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
