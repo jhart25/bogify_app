@@ -12,7 +12,6 @@ var request = require('request'); // "Request" library
 var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
-
 var client_id = 'fca9dd2e36154b3ca6ef55f2106f71b2'; // Your client id
 var client_secret = 'b09a264a1c064ac4993183b9c8011a23'; // Your secret
 var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
@@ -67,7 +66,7 @@ app.get('/callback', function(req, res) {
   var storedState = req.cookies ? req.cookies[stateKey] : null;
 
   if (state === null || state !== storedState) {
-    res.redirect('/#' +
+    res.redirect('/discover' +
       querystring.stringify({
         error: 'state_mismatch'
       }));
@@ -104,13 +103,13 @@ app.get('/callback', function(req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        res.redirect('http://localhost:3000/#' +
+        res.redirect('http://localhost:3000/discover' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
           }));
       } else {
-        res.redirect('/#' +
+        res.redirect('/discover' +
           querystring.stringify({
             error: 'invalid_token'
           }));
