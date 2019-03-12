@@ -5,20 +5,20 @@ function SearchForm(props) {
   return (
     <form className="search">
       <div className="form-group">
-        <label htmlFor="track">Track or Artist(s) Name:</label>
+        <label htmlFor="artist">Artist(s) Name:</label>
         <input
           value={props.search}
           onChange={props.handleInputChange}
-          name="track"
-          list="tracks"
+          name="artist"
+          list="artists"
           type="text"
           className="form-control"
-          placeholder="Type in a track or artist name to begin..."
-          id="track"
+          placeholder="Type in a artist name to begin..."
+          id="artist"
         />
-        <datalist id="tracks">
-          {props.tracks.map(track => (
-            <option value={track} key={track} />
+        <datalist id="artists">
+          {props.artists.map(artist => (
+            <option value={artist} key={artist} />
           ))}
         </datalist>
         <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
