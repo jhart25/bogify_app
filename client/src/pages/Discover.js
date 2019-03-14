@@ -48,7 +48,7 @@ class Discover extends Component {
           Now Playing: { this.state.nowPlaying.name }
         </div>
         <div>
-          <img src={this.state.nowPlaying.albumArt} style={{ height: 150 }}/><br></br>
+          <img src={this.state.nowPlaying.albumArt} alt="BestHits2019" style={{ height: 150 }}/><br></br>
           <button onClick={() => this.getNowPlaying()}>
             Check Now Playing
           </button>

@@ -7,7 +7,7 @@ function About() {
       <Carousel />
         <h1>Bogify</h1>
         <h2>A more Social Spotify</h2>
-        <a href="http://localhost:8888">
+        <a href="http://localhost:3000">
           <button>Login With Spotify</button>
         </a>
     </div>
