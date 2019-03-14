@@ -1,5 +1,5 @@
 {
-  "name": "bogify_app",
+  "name": "spotifyblog",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -13,25 +13,14 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jhart25/bogify_app.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jhart25/bogify_app/issues"
-  },
-  "homepage": "https://github.com/jhart25/bogify_app#readme",
   "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-    "bootstrap": "^4.3.1",
-    "express": "^4.16.4",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.4.17",
-    "react-spotify-api": "^1.5.1",
-    "reactstrap": "^7.1.0",
+    "@material-ui/core": "^3.9.2",
+    "cosmicjs": "^3.2.14",
+    "lodash.chunk": "^4.2.0",
+    "lodash.flatten": "^4.4.0",
+    "lodash.uniq": "^4.5.0",
     "spotify-web-api-js": "^1.2.0"
   }
 }
