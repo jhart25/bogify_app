@@ -5,6 +5,7 @@ import OtherPosts from './OtherPosts';
 import SpotifyContainer from './SpotifyContainer';
 import * as CosmicFunctions from '../cosmicFunctions';
 
+
 class App extends Component {
 
     constructor(props){
@@ -42,7 +43,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">          
-          Bogify
+          BOGIFY
         </header>
         <div className="featuredPost">
           {this.state.dataReceived ? <FeaturedPost post={this.state.posts[this.state.featuredPostIndex]}/> : ''}
@@ -54,7 +55,7 @@ class App extends Component {
           <OtherPosts allPosts={this.state.posts} otherPosts={this.state.otherPosts} changeFeaturedPost={(index) => this.changeFeaturedPost(index)}/>
         </div>
         <div className="footer">
-          <p>Footer here</p>
+          <p>Bogify-The only way</p>
         </div>
       </div>
     );
