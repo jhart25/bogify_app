@@ -19,10 +19,10 @@
 
 .App-header {
   grid-column: 1/-1;
-  color: red;
+  color:Black;
   text-align: center;
   font-size: 2em;
-  background-image: url("../images/Zante.jpg")
+  background-image:linear-gradient(#2c3e50)
   
 }
 
@@ -44,11 +44,10 @@ grid-row: 2/3;
 .footer {
   grid-column: 1/-1;
   grid-row-start: 5;
-  color: white;
+  color: black;
   font-size: 25px;
   font-family: awesome;
-
-  
+  margin-left: 5  
 }
 
 .App-title {
