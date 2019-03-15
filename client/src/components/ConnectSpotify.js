@@ -8,7 +8,7 @@ class ConnectSpotify extends Component {
     return (
       <div className="ConnectSpotify">
         <a href={SpotifyFunctions.redirectUrlToSpotifyForLogin()}>
-            <button>Connect to Spotify</button>
+            <button>Connect to Bogify</button>
         </a>
       </div>
     );

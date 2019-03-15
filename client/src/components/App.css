@@ -1,6 +1,6 @@
 .App {
   margin: auto;
-  padding-left: 50px;
+  padding-left: 1px;
   padding-right: 50px;
   text-align: center;
   display: grid;
@@ -12,10 +12,18 @@
   align-items: stretch;
   height: 100vh;
   max-width: 1600px;
+  width: 100%;
+  
+
 }
 
 .App-header {
   grid-column: 1/-1;
+  color: red;
+  text-align: center;
+  font-size: 2em;
+  background-image: url("../images/Zante.jpg")
+  
 }
 
 .featuredPost {
@@ -36,6 +44,11 @@ grid-row: 2/3;
 .footer {
   grid-column: 1/-1;
   grid-row-start: 5;
+  color: white;
+  font-size: 25px;
+  font-family: awesome;
+
+  
 }
 
 .App-title {
@@ -87,6 +100,7 @@ grid-row: 3/4;
 .footer {
   grid-column: 1/1;
   grid-row: 5/6;
+  color:blue;
 }
 
 .App-title {

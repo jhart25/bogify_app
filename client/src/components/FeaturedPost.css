@@ -2,7 +2,11 @@
 	height: 100%;
 	display: flex;
 	align-items: flex-start;
+	margin-top: -20px;
+	background-image: url("../images/Music.jpg");
 }
+
+
 
 .FeaturedPost > div:first-of-type {
 	height: 100%;
@@ -43,4 +47,10 @@
 .playArtist:active {
 	position:relative;
 	top:1px;
+}
+
+body {
+
+background-image: url("../images/Music.jpg")
+
 }
