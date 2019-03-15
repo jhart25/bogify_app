@@ -14,6 +14,7 @@
 
 .FeaturedPost p {
 	text-align: left;
+	color: darkslategray;
 }
 
 .FeaturedPost h3 {
@@ -22,6 +23,7 @@
 
 .content {
 	padding: 10px;
+	color: darkslateblue;
 }
 
 .playArtist {
