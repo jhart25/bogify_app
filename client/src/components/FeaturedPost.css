@@ -4,17 +4,21 @@
 	align-items: flex-start;
 	margin-top: -20px;
 	background-image: url("../images/Music.jpg");
+	
 }
 
 
 
 .FeaturedPost > div:first-of-type {
 	height: 100%;
+	background-image:  url("../images/Music5.jpg")
+	
+	
 }
 
 .FeaturedPost p {
 	text-align: left;
-	color: darkslategray;
+	color:black;
 }
 
 .FeaturedPost h3 {
