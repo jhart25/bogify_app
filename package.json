@@ -17,6 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "@pusher/chatkit-client": "^1.4.1",
+    "@pusher/chatkit-server": "^1.1.0",
     "cosmicjs": "^3.2.14",
     "lodash.chunk": "^4.2.0",
     "lodash.flatten": "^4.4.0",
