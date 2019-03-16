@@ -32,6 +32,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
+    const roomId = "30409029";
     try {
       const { posts, authors } = await CosmicFunctions.getCosmicJsData();
       this.setState({ dataReceived: true, posts: posts, authors: authors, otherPosts: posts.slice(1) })
@@ -42,7 +43,7 @@ class App extends Component {
       console.error(err.stack);
       this.setState({ dataReceived: false });
     }
-
+    
     const chatManager = new ChatManager({
       instanceLocator: instanceLocator,
       userId: 'bogify',
@@ -53,15 +54,17 @@ class App extends Component {
 
     chatManager.connect()
       .then(currentUser => {
+        console.log("i am connected");
         this.currentUser = currentUser
         this.currentUser.subscribeToRoom({
           roomId: roomId,
           hooks: {
-            onNewMessage: message => {
+            onMessage: message => {
 
               this.setState({
                 messages: [...this.state.messages, message]
               })
+              console.log(message);
             }
           }
         })
@@ -101,7 +104,7 @@ class App extends Component {
           <Title />
           <MessageList 
           roomId = {this.state.roomId}
-          message = {this.state.messages} />
+          messages = {this.state.messages} />
           <SendMessageForm 
           sendMessage = {this.sendMessage} />
         </div>
