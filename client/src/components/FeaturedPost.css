@@ -3,7 +3,7 @@
 	display: flex;
 	align-items: flex-start;
 	margin-top: -20px;
-	background-image: url("../images/Music.jpg");
+	background-image:  url("../images/Music.jpg");
 	
 }
 
@@ -14,15 +14,18 @@
 	background-image:  url("../images/Music5.jpg")
 	
 	
+	
 }
 
 .FeaturedPost p {
 	text-align: left;
 	color:black;
+	font-weight: bold;
 }
 
 .FeaturedPost h3 {
 	padding-top: 25px;
+	font-weight: bold;
 }
 
 .content {
@@ -39,7 +42,7 @@
 	border:1px solid black;
 	display:inline-block;
 	cursor:pointer;
-	color:black;
+	color:white;
 	font-family:Arial;
 	font-size:17px;
 	padding:10px 31px;
