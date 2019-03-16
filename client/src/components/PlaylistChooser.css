@@ -8,7 +8,7 @@
 	justify-content: space-around;
 	width: '100%';
     max-width: 360;
-    position: 'relative'
+    position: 'relative';
 }
 
 .PlaylistChooser h1 {
@@ -27,7 +27,7 @@ ul {
 	padding: 10px 31px;
 }
 
-.optionsSelection: {
+.optionsSelection {
   flex: 1 1 auto;
   background-color: 'inherit';
   padding: 0;
@@ -37,7 +37,7 @@ ul {
   justify-content: flex-start;
 }
 
-.playlistViewer: {
+.playlistViewer {
   height: 200px;
   overflow: auto;
   flex: 2 1 auto;
