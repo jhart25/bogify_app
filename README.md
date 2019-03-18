@@ -1,3 +1,7 @@
+https://quiet-wave-99903.herokuapp.com/
+
+![screenshot](bogify-screenshot.png)
+
 # bogify_app
 
 Bogify is a music app that lets the users select exisiting posts about different musicians, and the user can play their discography through Spotify. Users login using the Spotify Authorization. Users can shuffle the artists discography into their own playlists.
